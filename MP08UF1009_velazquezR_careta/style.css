@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.cara {
+    width: 700px;
+    height: 950px;
+    background: rgb(199, 126, 92);
+    border-radius: 200px 200px 300px 300px;
+    margin: 0 auto;
+}
+
+.cabell {
+    height: 200px;
+    background: black;
+    border-radius: 200px 200px 0px 0px;
+    box-shadow: inset 0 -50px 50px rgb(199, 126, 92);
+}
+
+
+
+.front {
+    height: 200px;
+}
+
+.mirada {
+    height: 70px;
+    text-align: center;
+}
+
+.mirada .ulluEsq {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    transform: translate(50%,-50%) rotate(45deg);
+    width: 110px;
+    height: 110px;
+    border-radius: 160px 0;
+    background-color: white;
+    overflow: hidden;
+    transform: all 0.5s ease-in-out;
+}
+
+.mirada .ulluEsq .bola {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    top: 22px;
+    left: 22px;
+    background-color: black;
+    animation: bola 5s ease-in-out infinite;
+}
+
+.mirada .ulluEsq .iris {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #617983;
+    top: 54px;
+    left: 54px;
+}
+.mirada .ulluDre {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    transform: translate(50%,-50%) rotate(45deg);
+    width: 110px;
+    height: 110px;
+    border-radius: 160px 0;
+    background-color: white;
+    overflow: hidden;
+    transform: all 0.5s ease-in-out;
+}
+
+.mirada .ulluDre .bola {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    top: 22px;
+    left: 22px;
+    background-color: black;
+    animation: bola 5s ease-in-out infinite;
+}
+
+.mirada .ulluDre .iris {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: black;
+    top: 16px;
+    left: 16px;
+}
+
+.sombra .sombra1 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: -63px;
+    left: 299px;
+    background-color: rgb(181, 113, 81);
+}
+
+.cejas {
+    width: 35%;
+    height: 20%;
+    background: transparent;
+    border-radius: 60% 60% 0 0;
+    box-shadow: 0 -3vmin 0 -1vmin;
+    top: -16%;
+    left: 57%;
+}
+
+.cejas .ceja1 {
+    width: -35%;
+    height: 90%;
+    background: transparent;
+    border-radius: 60% 60% 0 0;
+    box-shadow: 0 -3vmin 0 -1vmin;
+    top: 0%;
+    left: -125%;
+}
+
+@keyframes lid-top{
+    0%, 10%, 18%, 26%, 34%, 48%, 56%, 76%, 84% {
+        transform: translateY(-60px);
+    }
+    14%, 30%, 52%, 80% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes lid-bottom{
+    0%, 10%, 18%, 26%, 34%, 48%, 56%, 76%, 84% {
+        transform: rotate(180deg) translateY(-60px);
+    }
+    14%, 30%, 52%, 80% {
+        transform: rotate(180deg) translateY(0);
+    }
+}
+
+.orelles {
+    width: 25%;
+    height: 34%;
+    background: rgb(199, 126, 92);
+    border-radius: 70% 70% 50% 100%;
+    top: -28%;
+    left: -15%;
+    transform: rotate(360deg);
+}
+
+.orelles::after{
+    width: 100%;
+    height: 100%;
+    border-radius: 70% 70% 100% 100%;
+    background: rgb(199, 126, 92);
+    transform: rotate(18deg);
+    left: 37vmin;
+    top: 10%;
+}
+
+.orelles .orella2 {
+    width: 110%;
+    height: 100%;
+    background: rgb(199, 126, 92);
+    border-radius: 70% 70% 100% 100%;
+    top: 0%;
+    left: 408%;
+    transform: rotate(360deg);
+}
+
+.orelles .orella2::after{
+    width: 100%;
+    height: 100%;
+    border-radius: 100% 100% 70% 70%;
+    background: black;
+    transform: rotate(18deg);
+    left: 37vmin;
+    top: 10%;
+}
+
+
+.ulleres {
+    z-index: 999;
+    width: 40%;
+    height: 25%;
+    border: 7px black;
+    border-radius: 40% 40% 90% 90%;
+    left: 50%;
+    top: -67%;
+    transform-origin:left center;
+    transform: translate(-100%, 0) rotate(360deg);
+    box-shadow: inset 0 0 0 2vmin black;
+}
+
+.ulleres .ulleres2 {
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    border: 7px black;
+    border-radius: 40% 40% 90% 90%;
+    left: 210%;
+    top: 0%;
+    transform-origin:left center;
+    transform: translate(-100%, 0) rotate(360deg);
+    box-shadow: inset 0 0 0 2vmin black;
+}
+
+.ulleres .patas {
+    width: 30%;
+    height: 10%;
+    background: black;
+    left: -27%;
+    top: -90%;
+    border-radius: 40%;
+}
+
+.ulleres .patas2 {
+    width: 24%;
+    height: 10%;
+    background: black;
+    left: 206%;
+    top: -100%;
+    border-radius: 40%;
+}
+
+.ulleres .soporte {
+    width: 25%;
+    height: 16%;
+    background: transparent;
+    border-radius: 60% 60% 0 0;
+    box-shadow: 0 -3vmin 0 -1vmin;
+    top: -107%;
+    left: 93%;
+}
+
+
+.nas {
+    width: 16%;
+    height: 30%;
+    border-radius: 2vmin 5vmin 5vmin;
+    border: 1vmin 2vmin solid;
+    border-right: 0.75vmin solid rgb(135, 92, 71);
+    border-left-color:transparent;
+    left: 48%;
+    top: -89%;
+    transform: translate(-50%,0);
+    background:;
+}
+
+
+.boca {
+    width: 200px;
+    height: 70px;
+    border: 10px solid rgb(224, 131, 147);
+    border-top: 0;
+    background: rgb(224, 131, 147);
+    border-radius: 0 0 120px 120px / 0 0 90px 90px;
+    position: absolute;
+    bottom: 115px;
+    left: 250px;
+}
+
+
+.boca .labios1 {
+    background: rgb(224, 131, 147);
+    width: 60%;
+    height: 70%;
+    border-radius: 50%;
+    top: -30%;
+    left: 25%;
+    transform: translate(-50%, 0);
+}
+
+.boca .labios2 {
+    background: rgb(224, 131, 147);
+    width: 60%;
+    height: 70%;
+    border-radius: 50%;
+    top: -100%;
+    left: 75%;
+    transform: translate(-50%, 0);
+}
+
+.boca .blinea {
+    width: 100%;
+    height: 30%;
+    border-radius: 100% / 50%;
+    border-bottom: 0.60vmin solid;
+    top: -136%;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(2deg);
+}
+
+.roba {
+    width: 150%;
+    height: 40%;
+    background: rgb(29, 84, 200);
+    left: -23%;
+    top: -50%;
+    border-radius: 70% 70% 0 0;
+}
+
+.coll {
+    width: 40%;
+    height: 30%;
+    background: rgb(199, 126, 92);
+    left: 30%;
+    top: -100%;
+    border-radius: 0 0 40% 40%;
+    box-shadow: inset 0px -65px 0px rgb(115, 153, 235);
+}
+
+
+
+
